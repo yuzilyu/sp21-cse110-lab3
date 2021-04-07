@@ -25,7 +25,8 @@
     <hr/>
     <main>
         <section>
-            <h1 id="twodaysago">A Case of the Mondays</h1>
+            <fieldset>
+                <h1 id="twodaysago">A Case of the Mondays</h1>
             <figure>
                 <figcaption>Mood audio here:</figcaption>
                 <audio
@@ -64,15 +65,18 @@
             <h5>Some Seratonin</h5>
             <video controls width="250">
             
-                <source src="/media/Pexels Videos 2795691.mp4"
+                <source src="/media/Pexels-Videos-2795691.mp4"
                         type="video/mp4">
             
                 Sorry, your browser doesn't support embedded videos.
             </video>
+            </fieldset>
+            
         </section>
         <hr/>
         <section>
-            <h1 id="yesterday">So Many Classes Today</h1>
+            <fieldset>
+                <h1 id="yesterday">So Many Classes Today</h1>
             <h2>--Tuesday's Journal</h2>
             <h3>April 6th, 2021</h3>
             <figure>
@@ -117,10 +121,13 @@
             
                 Sorry, your browser doesn't support embedded videos.
             </video>
+            </fieldset>
+            
         </section>
         <hr/>
         <section>
-            <h1 id="today">Exciting Day</h1>
+            <fieldset>
+                <h1 id="today">Exciting Day</h1>
             <h2>--Wednesday's Journal</h2>
             <h3>April 7th, 2021</h3>
             <figure>
@@ -165,44 +172,54 @@
             
                 Sorry, your browser doesn't support embedded videos.
             </video>
+            </fieldset>
+            
         </section>
         <hr/>
         <section>
             <h1 id="newEntry">Record what happened today:</h1>
             <form onsubmit="alert('New Entries Added')">
                 <fieldset>
-                    <legend>The date you are entering an entry for:</legend>
+                    <legend><b>The date you are entering an entry for:</b></legend>
                     <input type="date"/><br/>
                 </fieldset>
-                <fieldset>
-                    <legend>Choose your mood today</legend>
-                    <input type="radio" name="mood">Happy</input><br/>
-                    <input type="radio" name="mood">Indifferent</input><br/>
-                    <input type="radio" name="mood">Sad</input><br/>
-                </fieldset>
-                <fieldset>
-                    <legend>Have you finished these today</legend>
-                    <input type="checkbox" >Homework</input><br/>
-                    <input type="checkbox" >Lecture</input><br/>
-                    <input type="checkbox" >Reading</input><br/>
-                </fieldset>
-                </form>
                 <br/>
-                <legend>Title:</legend>
+                <fieldset>
+                    <div><b>Choose your mood today</b></div><br/>
+                    <input type="radio" name="mood">Happy<br/>
+                    <input type="radio" name="mood">Indifferent<br/>
+                    <input type="radio" name="mood">Sad<br/>
+                </fieldset>
+                <br/>
+                <fieldset>
+                    <div><b>Have you finished these today</b></div><br/>
+                    <input type="checkbox" >Homework<br/>
+                    <input type="checkbox" >Lecture<br/>
+                    <input type="checkbox" >Reading<br/>
+                </fieldset>
+                <br/>
+                <fieldset>
+                    <div><b>Title:</b></div>
                 <input type = "text" placeholder = "Enter the title of the entry" />
+                </fieldset>
                 <br/>
-                <legend>Enter your vent below</legend>
-                <textarea rows="5" cols="100">tell us what happened...</textarea>
+                <fieldset>
+                    <div><b>Enter your vent below</b></div>
+                    <textarea rows="5" cols="100">tell us what happened...</textarea>
+                </fieldset>
                 <br/>
-                <legend>What do you plan to do to wind down?</legend>
-                <input list="wind-down-choice"/>
-                <datalist id="wind-down-choice">
+                <fieldset>
+                    <div><b>What do you plan to do to wind down?</b></div>
+                    <input list="wind-down-choice"/>
+                    <datalist id="wind-down-choice">
                     <option value="Watch TV"></option>
                     <option value="Play Videogames"></option>
                     <option value="Eat out"></option>
                 </datalist>
+                </fieldset>
                 <br/>
-                <legend>Which class do you plan on taking for P/NP?</legend>
+                <fieldset>
+                    <div><b>Which class do you plan on taking for P/NP?</b></div>
                 <select>
                     <option value="">--Please choose an option--</option>
                     <option value="CSE101">CSE101</option>
@@ -211,6 +228,8 @@
                     <option value="CSE151A">CSE151A</option>
                     <option value="HUM5">HUM5</option>
                 </select>
+                </fieldset>
+                <br/>
             <button>Submit</button>
             </form>
         </section>
