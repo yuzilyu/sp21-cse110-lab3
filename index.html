@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
     <link rel="book icon" href="favicon/favicon-32x32.png" />
     <title>Journal Entries</title>
 </head>
+<style>
+        /* TODO finish this style*/
+        summary {
+            color:navy;
+            text-decoration:overline;
+            text-align: left;
+        }
+</style>
 <body>
     <header>
-        <div>Yuzi's Journal Entries</div>
+        <div>
+            <h1 style="text-align: center;">Yuzi's Journal Entries</h1>
+        </div>
         <details>
             <summary>Notice</summary>
             Property of Yuzi's. This webpage is a judge-free zone. Working product.
@@ -27,8 +40,10 @@
         <section>
             <fieldset>
                 <h1 id="twodaysago">A Case of the Mondays</h1>
-            <figure>
-                <figcaption>Mood audio here:</figcaption>
+                <h2>--Monday's Journal</h2>
+                <h3>April 5th, 2021</h3>
+            <figure class="audio-box">
+                <figcaption class="audio-caption">Mood audio here:</figcaption>
                 <audio
                     controls
                     src="media/gta-san-andreas-ah-shit-here-we-go-again_BWv0Gvc.mp3">
@@ -37,8 +52,7 @@
                 </audio>
             </figure>
             <img src = "img/Monday-Meme2.jpg" alt="monday-meme" width = "250"/>
-            <span>--Monday's Journal</span>
-            <span>April 5th, 2021</span>
+            
             <h4>Highlights of the day</h4>
             <ol>
                 <li>Nothing</li>
@@ -51,7 +65,8 @@
                 <li>I don't wannt go to work but I have to</li>
                 <li>gurrrh... <strong>WHERE DID MY WEEKEND GO</strong></li>
             </ol>
-            <h4>TODO List</h4>
+            <br/>
+            <h4 id="todo-list">TODO List</h4>
             <ul>
                 <li><input type="checkbox"/>Read <i>The Metamorphosis</i> by Kafka</li>
                 <li><input type="checkbox"/><b>Finish</b> 101 homework tonight</li>
@@ -79,7 +94,7 @@
                 <h1 id="yesterday">So Many Classes Today</h1>
             <h2>--Tuesday's Journal</h2>
             <h3>April 6th, 2021</h3>
-            <figure>
+            <figure class="audio-box">
                 <figcaption>Mood audio here:</figcaption>
                 <audio
                     controls
@@ -101,7 +116,7 @@
                 <li>DEPRESSION</li>
             </ol>
             <br/>
-            <h4>TODO List</h4>
+            <h4 id="todo-list">TODO List</h4>
             <ul>
                 <li><input type="checkbox"/>Finish PSA for HUM5</li>
                 <li><input type="checkbox"/>Check Webreg about waitlist</li>
@@ -130,7 +145,7 @@
                 <h1 id="today">Exciting Day</h1>
             <h2>--Wednesday's Journal</h2>
             <h3>April 7th, 2021</h3>
-            <figure>
+            <figure class="audio-box">
                 <figcaption>Mood audio here:</figcaption>
                 <audio
                     controls
@@ -153,7 +168,7 @@
                 <li>This html page looks so bland</li>
             </ol>
             <br/>
-            <h4>TODO List</h4>
+            <h4 id="todo-list">TODO List</h4>
             <ul>
                 <li><input type="checkbox"/>Finish 110 lab today</li>
                 <li><input type="checkbox"/>Watch 101 lecture recording</li>
@@ -176,9 +191,10 @@
             
         </section>
         <hr/>
-        <section>
-            <h1 id="newEntry">Record what happened today:</h1>
+        <section id="form-section">
+            
             <form onsubmit="alert('New Entries Added')">
+                <h1 id="newEntry">Record what happened today:</h1>
                 <fieldset>
                     <legend><b>The date you are entering an entry for:</b></legend>
                     <input type="date"/><br/>
